@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                background-image: url('images/background6.jpg');
+                background-repeat: repeat;
+                background-size:cover;
+            }
+            .headerdiv
+            {
+                background-image: url('images/Header.jpg');
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(252, 249, 249);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv
+            {
+                height: 80%;
+                padding-top: 100px;
+                position: relative;
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .footerdiv
+            {
+                height: 10%;
+                color: rgb(245, 238, 238);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .bodydiv p
+            {
+                font-family:sans-serif;
+            }
+            .parentdiv
+            {
+                height: 100%;
+                width: 100%;
+            }
+            .tablediv
+            {
+                margin-left: 100px;
+                gap: 30px;
+                scroll-behavior: auto;
+            }
+            .tablediv table
+            {
+                border-style: none;
+            }
+            .tablediv td
+            {
+                border-style: none;
+                display: flex;
+                padding: 5px;
+                float: left;
+            }
+
+            .image_hover 
+            {
+                width: 500px;
+                height: 500px;
+                border-radius: 400px;
+                transition: border-radius 0.5s;
+            }
+
+            .tablediv tr
+            {
+                padding: 20px;
+                display: flex;
+            }
+
+            .image_hover:hover
+            {
+                border-radius: 50px;
+            }
+
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>RELATIVES</h1>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <div class="tablediv">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/Vacation1.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation2.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation3.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation4.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/Vacation5.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation6.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation7.jpg" alt="Front Image" class="image_hover">
+                            </td>
+                            <td>
+                                <img src="images/Vacation8.jpg" alt="Front Image" class="image_hover">
+                           </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>    
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

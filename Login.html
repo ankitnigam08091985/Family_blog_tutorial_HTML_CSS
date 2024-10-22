@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function openLoginPage()
+            {
+                window.open("User_logged_in_page.html");
+            }
+
+            function openManageProfilePage()
+            {
+                window.open("Manage_profile_view.html")
+            }
+
+            function openRegisterPage()
+            {
+                window.open("Registration.html")
+            }
+        </script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                /*background-image: url('images/grp_family.JPG');*/
+                background-image: url('images/background_3.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .headerdiv
+            {
+                /*background-color: rgb(247, 245, 242);*/
+                /*border: 1px solid black;*/
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(17, 240, 229);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv
+            {
+                /*background-color: skyblue;*/
+                /*border: 1px solid black;*/
+                height: 80%;
+                color: rgb(18, 238, 102);
+                padding-top: 100px;
+                position: relative;
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv table tr,td 
+            {
+                font-size: 30px;
+            }
+            .footerdiv
+            {
+                /*background-color: rgb(233, 233, 175);*/
+                /*border: 1px solid black;*/
+                height: 10%;
+                color: rgb(245, 240, 240);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .footerdiv input
+            {
+                position:absolute; 
+                margin-left: 100px;
+                margin-top: 0px;
+                font-size: 30px;
+            }
+            .bodydiv table
+            {
+                padding-left: 300px;
+                font-family: "Trirong", serif;
+            }
+            .bodydiv p
+            {
+                font-family: "Sofia", sans-serif;
+            }
+            .parentdiv
+            {
+                height: 100%;
+                width: 100%;
+            }
+            .bodydiv input
+            {
+                position:relative; 
+                margin-left: 20px;
+                margin-top: 0px;
+                font-size: 30px;
+                border-radius: 10px;
+            }
+            .login
+            {
+                position: absolute;
+                margin-top: 50px;
+                margin-left: 150px;
+                font-size: 30px;
+                border: 1px solid blue;
+                border-radius: 12px;
+                color: rgb(12, 84, 240);
+            }
+            .login:hover {
+                font-weight: bold;
+                border: 3px solid blue;
+                font-size: 35px;
+            }
+            .frgtpwd
+            {
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 150px;
+                font-size: 30px;
+                color: rgb(17, 184, 226);
+            }
+            .frgtpwd:hover {
+                font-weight: bold;
+                font-size: 35px;
+            }
+            .upd
+            {
+                position: absolute;
+                margin-top: 180px;
+                margin-left: 150px;
+                font-size: 30px;
+                border: 1px solid rgb(5, 22, 78);
+                border-radius: 12px;
+                color: rgb(12, 84, 240);
+            }
+            .upd:hover {
+                font-weight: bold;
+                border: 3px solid rgb(138, 148, 145);
+                font-size: 35px;
+            }
+            .rgstr
+            {
+                position: absolute;
+                margin-top: 250px;
+                margin-left: 150px;
+                font-size: 30px;
+                border: 1px solid rgb(5, 22, 78);
+                border-radius: 12px;
+                color: rgb(12, 84, 240);
+            }
+            .rgstr:hover {
+                font-weight: bold;
+                border: 3px solid rgb(138, 148, 145);
+                font-size: 35px;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>LIEU DE MÉMOIRE</h1>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <p><b style="text-align: center; padding-left: 100px; font-size: 20px; color:aqua;">Please login using your credentials</b></p>           
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <td><b>Username</b></td>
+                        <td><input type="text" id="username" for="username" size="50" maxlenght="100" title="Username is email address maximum length is 50 characters" required autofocus></td>
+                    </tr>
+                    <tr>
+                        <td><b>Password</b></td>
+                        <td><input type="password" id="password" for="password" size="50" title="Should contain atleast 1 number, 1 lowercase and 1 uppercase character maximum length is 10 characters" 
+                            required></td>
+                    </tr>
+                    <tr>
+                        <td><b>Role</b></td>
+                        <td><input type="radio" id="user" name="user" value="user" checked>
+                        <label for="user">User</label><br>
+                        <input type="radio" id="admin" name="admin" value="admin">
+                        <label for="admin">Admin</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="login" onclick="openLoginPage()">Login</button></td>
+                    </tr>
+                    <tr>
+                        <td><a class="frgtpwd" href="Forgot_password.html" target="_blank">Forgot Password</a></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="upd" onclick="openManageProfilePage()">Manage Profile</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="rgstr" onclick="openRegisterPage()">Regsiter</button></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

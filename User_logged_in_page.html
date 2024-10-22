@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                background-image: url('images/background1_3.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .headerdiv
+            {
+                background-image: url('images/Header.jpg');
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(252, 249, 249);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv
+            {
+                height: 80%;
+                padding-top: 100px;
+                position: relative;
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+                font-size: 30px;
+            }
+            .footerdiv
+            {
+                height: 10%;
+                color: rgb(245, 238, 238);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .bodydiv p
+            {
+                font-family: "Sofia", sans-serif;
+            }
+            .parentdiv
+            {
+                height: 100%;
+                width: 100%;
+            }
+            * 
+            {
+                box-sizing: border-box;
+            }
+            /* Remove extra left and right margins, due to padding */
+            .row 
+            {
+                margin: 0 5px;
+            }
+            /* Float 3 columns side by side */
+            .column 
+            {
+                float: left;
+                width: 33.33%;
+                padding: 10px 10px;
+                color: rgb(229, 236, 228);
+            }
+            .column a
+            {
+                color: rgb(240, 240, 229);
+                font-size: 50px;
+                text-decoration: none;
+                }
+            .column a:hover
+            {
+                color: rgb(14, 170, 74);
+                font-size: 60px;
+            }
+            /* Clear floats after the columns */
+            .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Style the counter cards */
+            .card1, .card2, .card3, .card4, .card5, .card6
+            {
+                box-shadow: 0 4px 8px 0 rgba(231, 175, 203, 0.5);
+                padding: 20px;
+                text-align: center;
+                background-color: #f1f1f1;
+                border-radius: 20%;
+                border: 2px solid black;
+            }
+            .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(243, 242, 242);
+                text-shadow: none;
+            }
+            .card1 {
+                background-image: url('images/family_background.jpg');
+                background-size: 100% 100%;
+            }
+            .card2 {
+                background-image: url('images/Hobbies_background1.jpg');
+                background-size: 100% 100%;
+            }
+            .card3 {
+                background-image: url('images/colleagues_background1.jpg');
+                background-size: 100% 100%;
+            }
+            .card4 {
+                background-image: url('images/Friends_background1.jpg');
+                background-size: 100% 100%;
+            }
+            .card5 {
+                background-image: url('images/Relatives_background1.jpg');
+                background-size: 100% 100%;
+            }
+            .card6 {
+                background-image: url('images/Vacation_background.png');
+                background-size: 100% 100%;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>SELECT THE MEMORY BY CLICKING ON THE CARDS</h1>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <div class="row">
+                    <div class="column">
+                        <div class="card1">
+                            <br><br>
+                            <a href="Family.html" target="_blank">Family</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card2">
+                            <br><br>
+                            <a href="Hobbies.html" target="_blank">Hobbies</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card3">
+                            <br><br>
+                            <a href="Colleagues.html" target="_blank">Colleagues</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card4">
+                            <br><br>
+                            <a href="Friends.html" target="_blank">Friends</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card5">
+                            <br><br>
+                            <a href="Relatives.html" target="_blank">Relatives</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card6">
+                            <br><br>
+                            <a href="Vacations.html" target="_blank">Vacation</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

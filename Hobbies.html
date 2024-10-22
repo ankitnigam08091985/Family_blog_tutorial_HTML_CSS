@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                background-image: url('images/background6.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .headerdiv
+            {
+                background-image: url('images/Header.jpg');
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(252, 249, 249);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv
+            {
+                height: 80%;
+                padding-top: 100px;
+                position: relative;
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+                font-size: 30px;
+            }
+            .footerdiv
+            {
+                height: 10%;
+                color: rgb(245, 238, 238);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .bodydiv p
+            {
+                font-family: "Sofia", sans-serif;
+            }
+            .parentdiv
+            {
+                height: 100%;
+                width: 100%;
+            }
+            * 
+            {
+                box-sizing: border-box;
+            }
+            .scrolling-card-container {
+                display: flex;
+                overflow-x: auto;
+                padding: 20px;
+                gap: 20px;
+            }
+            /* Style the counter cards */
+            .card1, .card2, .card3, .card4, .card5, .card6
+            {
+                box-shadow: 4px 4px 4px 4px rgba(184, 126, 238, 0.5);
+                padding: 2px;
+                text-align: center;
+                background-color: transparent;
+                border-radius: 10px;
+                min-height: 500px;
+                min-width: 500px;
+                perspective: 1000px;
+            }
+            .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(102, 8, 8);
+                text-shadow: none;
+                background-color: transparent;
+                font-style: italic;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>HOBBIES</h1>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <div class="scrolling-card-container">
+                    <div class="card1">
+                        <div class="card1above">
+                            <img src="images/Hobbies1.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card1below">
+                            <p>Learning how to play Guitar!!!</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="card2above">
+                            <img src="images/Hobbies2.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card2below">
+                            <p>Basketball champion &#128540;!!!</p>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="card3above">
+                            <img src="images/Hobbies3.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card3below">
+                            <p>Fishing.....phew!!!</p>
+                        </div>
+                    </div>
+                    <div class="card4">
+                        <div class="card4above">
+                            <img src="images/Hobbies4.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card4below">
+                            <p>Capturing memories!!!</p>
+                        </div>
+                    </div>
+                    <div class="card5">
+                        <div class="card5above">
+                            <img src="images/Hobbies5.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card5below">
+                            <p>Color it &#128526; !!!  </p>
+                        </div>
+                    </div>
+                    <div class="card6">
+                        <div class="card6above">
+                            <img src="images/Hobbies6.jpg" alt="Front Image" style="width:500px;height:500px; border-radius: 10px;">
+                        </div>
+                        <div class="card6below">
+                            <p>Cooking yummy food &#128513;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

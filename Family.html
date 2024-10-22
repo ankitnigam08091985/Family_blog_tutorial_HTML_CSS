@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                background-image: url('images/background6.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .headerdiv
+            {
+                background-image: url('images/Header.jpg');
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(252, 249, 249);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .bodydiv
+            {
+                height: 80%;
+                padding-top: 100px;
+                position: relative;
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+                font-size: 30px;
+            }
+            .footerdiv
+            {
+                height: 10%;
+                color: rgb(245, 238, 238);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .parentdiv
+            {
+                height: 100%;
+                width: 100%;
+            }
+            .scrolling-card-container {
+                display: flex;
+                overflow-x: auto;
+                padding: 20px;
+                gap: 20px;
+            }
+            /* Style the counter cards */
+            .card
+            {
+                box-shadow: 0 4px 8px 0 rgba(231, 175, 203, 0.5);
+                padding: 2px;
+                text-align: center;
+                background-color: transparent;
+                border-radius: 10px;
+                border: 1px solid rgb(194, 179, 179);
+                min-height: 600px;
+                min-width: 600px;
+                perspective: 1000px;
+            }
+
+
+            .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+
+          .card:hover .card-inner {
+            transform: rotateY(180deg);
+          }
+
+          .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Safari */
+          }
+
+          .card-front {
+            background-color: #bbb;
+            color: black;
+          }
+
+          .card-back {
+            background-color: rgb(232, 236, 240);
+            color: rgb(230, 184, 184);
+            transform: rotateY(180deg);
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>FAMILY</h1>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <div class="scrolling-card-container">
+                    <div class="card">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img src="images/Family_card1.jpg" alt="Front Image" style="width:600px;height:600px;">
+                        </div>
+                        <div class="card-back">
+                          <p>Family photo in Vacation</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img src="images/Family_card2.jpg" alt="Front Image" style="width:600px;height:600px;">
+                        </div>
+                        <div class="card-back">
+                          <p>Family photo in Weekend</p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="images/Family_card3.jpg" alt="Front Image" style="width:600px;height:600px;">
+                      </div>
+                      <div class="card-back">
+                        <p>Family photo during Summer vacation</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="images/Family_card4.jpg" alt="Front Image" style="width:600px;height:600px;">
+                      </div>
+                      <div class="card-back">
+                        <p>Family photo during Winter vacation</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="images/Family_card5.jpg" alt="Front Image" style="width:600px;height:600px;">
+                      </div>
+                      <div class="card-back">
+                        <p>Family photo celebration of birthday</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="images/Family_card6.jpg" alt="Front Image" style="width:600px;height:600px;">
+                      </div>
+                      <div class="card-back">
+                        <p>Family photo celebration of annniversary</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

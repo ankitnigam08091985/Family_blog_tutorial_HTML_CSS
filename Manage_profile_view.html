@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            body {
+                background-image: url('images/background4.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .headerdiv
+            {
+                height: 10%;
+                font-family: "Audiowide", sans-serif;
+            }
+            header h1 
+            {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color: rgb(247, 117, 78);
+                text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+            }
+            .footerdiv
+            {
+                height: 5%;
+                color: rgb(247, 242, 242);
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+                margin: 50px;
+                color:rgb(2, 16, 29);
+                text-decoration: none;
+                text-align: center;
+            }
+            li a {
+                display: block;
+                color: rgb(65, 64, 63);
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                padding: 16px;
+                text-decoration: none;
+                font-size: 30px;
+                margin-left: 300px;
+                margin-top: 0px;
+                cursor: pointer;
+                text-shadow:-1px -1px 0 #d1dad5,1px -1px 0 #ee0b0b,-1px 1px 0 #f50404,1px 1px 0 #ec0b0b;
+            }
+            .headerdiv .active {
+                font-weight: bold;
+                color: rgb(241, 130, 18);
+            }
+            li a:hover {
+                font-weight: bolder;
+                color:red;
+            }
+            .bodydiv {
+                height: 90%;
+                margin-left: 650px;
+                color: rgb(26, 24, 24);
+                text-align: left;
+                font-size: 30px;
+            }
+            .bodydiv label {
+                padding-right: 300px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .bodydiv .text {
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 20px;
+                text-align: center;
+                border: 3px solid rgb(243, 125, 15);
+            }
+            .bodydiv .text:hover {
+                border: 3px solid rgb(16, 212, 170);
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="parentdiv"></div>
+            <div class="headerdiv">
+                <header>
+                    <h1>PROFILE MANAGEMENT</h1>
+                    <ul>
+                        <li><a href="Manage_profile_view.html" class="active">View</a></li>
+                        <li><a href="Manage_profile_edit.html" >Edit</a></li>
+                        <li><a href="Manage_profile_delete.html" >Delete</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="bodydiv">
+                <form action="" method="post">
+                    <label for="username">Username</label><br>
+                    <input class="text" type="text" id="username" name="username" size="50" placeholder="Usermname" value="xyz123" disabled><br>
+                    <br>
+                    <label for="emladdr">Email address</label><br>
+                    <input class="text" type="text" id="emladdr" name="emladdr" size="50" placeholder="email address" value="xyz@gmail.com" disabled><br>
+                    <br>
+                    <label for="userpassword">Password</label><br>
+                    <input class="text" type="password" id="userpassword" name="userpassword" size="50" value="12345678" disabled><br>
+                    <br>
+                    <label for="country">Country</label><br>
+                    <input class="text" type="text" id="country" name="country" size="50" value="India" disabled><br>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="footerdiv">
+                <footer>
+                    <p>&copy; 2024 All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>
