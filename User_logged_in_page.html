@@ -3,6 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <script>
+            function openUploadPage()
+            {
+                window.open("Upload_image.html");
+            }
+        </script>
         <style>
             body {
                 background-image: url('images/background1_3.jpg');
@@ -48,7 +54,7 @@
             }
             .bodydiv p
             {
-                font-family: "Sofia", sans-serif;
+                font-family:Georgia, 'Times New Roman', Times, serif;
             }
             .parentdiv
             {
@@ -103,7 +109,7 @@
             .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p
             {
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
+                font-size: 30px;
                 font-weight: bold;
                 color: rgb(243, 242, 242);
                 text-shadow: none;
@@ -131,6 +137,19 @@
             .card6 {
                 background-image: url('images/Vacation_background.png');
                 background-size: 100% 100%;
+            }
+            .upload
+            {
+                margin-left: 800px;
+                font-size: 20px;
+                border: 1px solid rgb(5, 22, 78);
+                border-radius: 12px;
+                color: rgb(12, 84, 240);
+            }
+            .upload:hover {
+                font-weight: bold;
+                border: 3px solid rgb(138, 148, 145);
+                font-size: 25px;
             }
         </style> 
     </head>
@@ -190,6 +209,7 @@
                 </div>
             </div>
             <div class="footerdiv">
+                <button type="button" class="upload" value="Upload Image" onclick="openUploadPage()">Upload Image</button>
                 <footer>
                     <p>&copy; 2024 All rights reserved</p>
                 </footer>
